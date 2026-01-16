@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Creator Tools | 制作物一覧</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .vtuber-font {
+            font-family: 'DotGothic16', sans-serif;
+        }
+        .tool-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            border-color: #6366f1;
+            background: rgba(30, 41, 59, 0.9);
+        }
+        .bg-gradient-v {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <header class="py-16 px-4 text-center">
+        <div class="inline-block p-3 rounded-2xl bg-gradient-v mb-6 shadow-lg shadow-indigo-500/20">
+            <i class="fas fa-cubes text-4xl"></i>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold vtuber-font tracking-widest mb-4">V-Creator Tools</h1>
+        <p class="text-slate-400 max-w-lg mx-auto text-sm leading-relaxed">
+            VTuber活動や配信を便利にする自作ツール群。分析、管理、演出など、クリエイティブな活動をサポートします。
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tool 1: V-Analyse -->
+            <a href="./vtuber-comment-analyzer.html" class="tool-card p-6 rounded-3xl block group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fas fa-shield-cat text-2xl"></i>
+                    </div>
+                    <span class="text-[10px] font-bold bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full border border-indigo-500/20 uppercase">Release</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">V-Analyse</h2>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    AI（Gemini）を活用したコメント分析ツール。YouTubeリスクの判定や、独自の「キショコメ辞典」作成が可能です。
+                </p>
+                <div class="flex items-center text-xs font-bold text-indigo-400">
+                    ツールを開く <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <!-- Placeholder for Tool 2 -->
+            <div class="tool-card p-6 rounded-3xl opacity-60 relative overflow-hidden group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-700 flex items-center justify-center text-slate-500">
+                        <i class="fas fa-wrench text-2xl"></i>
+                    </div>
+                    <span class="text-[10px] font-bold bg-slate-800 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Planning</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2">Next Tool...</h2>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                    現在、新しいツールを開発中です。配信をより楽しく、より効率的に。
+                </p>
+                <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="vtuber-font text-sm tracking-widest">COMING SOON</span>
+                </div>
+            </div>
+
+            <!-- Add more cards as you create tools -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12 text-center">
+        <div class="flex justify-center gap-6 mb-6 text-slate-500">
+            <a href="#" class="hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+        </div>
+        <p class="text-[10px] text-slate-600 tracking-widest uppercase">© 2026 V-Creator Project All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
